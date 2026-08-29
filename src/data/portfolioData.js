@@ -1,6 +1,7 @@
 export const profile = {
   name: "Amirah Rizky Ramadhanti",
   initials: "AR",
+  photo: "/images/profile/profile.jpg",
   role: "Data Analyst & Data Scientist",
   location: "Surabaya, Indonesia",
   email: "mirarramadhanti@gmail.com",
@@ -18,7 +19,7 @@ export const profile = {
 
 export const stats = [
   { label: "IPK", value: "3.84", suffix: "/4.0" },
-  { label: "Publikasi Ilmiah", value: "3", suffix: "" },
+  { label: "Publikasi Ilmiah", value: "4", suffix: "" },
   { label: "Pengalaman Kerja", value: "4", suffix: "" },
   { label: "Organisasi & Volunteer", value: "6", suffix: "" },
 ];
@@ -80,46 +81,61 @@ export const organizations = [
     org: "Sinau Bareng",
     period: "Okt 2023 — Sekarang",
     desc: "Mengajar Matematika, Bahasa Indonesia, dan IPA untuk anak-anak SD dengan metode belajar yang menyenangkan.",
+    photo: "/images/organizations/relawan-tutor.jpg",
   },
   {
     role: "Ketua Kelompok Demak Jaya",
     org: "Gerakan Mengajar Desa",
     period: "Jan 2025 — Feb 2025",
     desc: "Memimpin tim relawan literasi, bertanggung jawab atas perencanaan kegiatan, logistik, dan distribusi tugas.",
+    photo: "/images/organizations/mengajar-desa.jpg",
   },
   {
     role: "Sekretaris Departemen Pendidikan",
     org: "Himpunan Mahasiswa UPN Veteran Jatim",
     period: "Mei 2024 — Feb 2025",
     desc: "Mengelola administrasi dan dokumentasi kegiatan departemen, termasuk notulensi rapat dan arsip program kerja.",
+    photo: "/images/organizations/dept-pendidikan.jpg",
   },
   {
     role: "Sekretaris Program Kerja",
     org: "GELAR RASA 2024",
     period: "Agu 2024 — Nov 2024",
     desc: "Mengelola administrasi acara yang diikuti 136 tim dari 5 provinsi — proposal, surat-menyurat, hingga LPJ.",
+    photo: "/images/organizations/gelar-rasa.jpg",
   },
   {
     role: "Anggota Departemen Advokesma",
     org: "Himpunan Mahasiswa UPN Veteran Jatim",
     period: "Mei 2023 — Jan 2024",
     desc: "Contact person mahasiswa baru dan perantara komunikasi antara mahasiswa dengan pihak jurusan.",
+    photo: "/images/organizations/advokesma.jpg",
   },
   {
     role: "Sekretaris Program Kerja",
     org: "ELFMENDA",
     period: "Sep 2023",
     desc: "Menyusun seluruh dokumen administratif orientasi mahasiswa baru, LPJ selesai tanpa revisi.",
+    photo: "/images/organizations/elfmenda.jpg",
   },
 ];
 
 export const publications = [
   {
     title:
+      "Geometric Brownian Motion and Cornish-Fisher Expansion for Stock Price Forecasting and Risk Measurement",
+    journal: "bit-Tech (Binary Digital – Technology), Vol. 9, No. 1, pp. 41–50",
+    period: "Agu 2026",
+    desc: "Mengombinasikan model stokastik GBM dengan pendekatan Value at Risk berbasis Cornish-Fisher Expansion untuk memprediksi harga saham sektor pertambangan sekaligus mengukur risiko investasinya secara lebih realistis.",
+    url: "https://jurnal.kdi.or.id/index.php/bt/article/view/3786",
+  },
+  {
+    title:
       "Implementasi Model Geometric Brownian Motion dalam Prediksi Harga Saham PT Antam Tbk",
     journal: "BIAStatistics — Journal of Statistics Theory and Application, Special Issue",
     period: "Feb 2026",
     desc: "Menerapkan model stokastik GBM untuk memprediksi harga saham PT Aneka Tambang Tbk.",
+    url: "https://biastatistics.statistics.unpad.ac.id/?journal=biastatistics-special-issue&page=article&op=view&path%5B%5D=352",
   },
   {
     title:
@@ -127,6 +143,7 @@ export const publications = [
     journal: "Jurnal Ilmiah Media Sisfo",
     period: "Okt 2025",
     desc: "Mengembangkan model deep learning BiLSTM dengan Attention Mechanism untuk memprediksi IHSG.",
+    url: "https://ejournal.unama.ac.id/index.php/mediasisfo/article/view/2392",
   },
   {
     title:
@@ -134,6 +151,7 @@ export const publications = [
     journal: "Prosiding Seminar Nasional Sains Data",
     period: "Nov 2023",
     desc: "Penelitian kuantitatif dengan analisis regresi untuk mengkaji pengaruh nilai tukar terhadap jumlah wisatawan Asia Tenggara.",
+    url: "https://www.researchgate.net/publication/382757570_Pengaruh_Nilai_Tukar_Rupiah_terhadap_Dolar_Amerika_Serikat_dan_Jumlah_Wisatawan_Asia_Tenggara",
   },
 ];
 
@@ -165,6 +183,7 @@ export const certification = {
   issuer: "Badan Nasional Sertifikasi Profesi (BNSP) — LSP UPN \"Veteran\" Jawa Timur",
   credential: "62010.2513.3.0007905.2025",
   period: "Des 2025",
+  url: "https://drive.google.com/file/d/1QchXtFbNRAlm3aTndyDsQDYDf0ipPWlQ/view",
 };
 
 export const navLinks = [

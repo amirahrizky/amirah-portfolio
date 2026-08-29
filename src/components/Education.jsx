@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Award, GraduationCap } from "lucide-react";
+import { Award, ExternalLink, GraduationCap } from "lucide-react";
 import { certification, education } from "../data/portfolioData.js";
 
 export default function Education() {
@@ -44,6 +44,16 @@ export default function Education() {
             <span className="clay-chip edu-period">{certification.period}</span>
             <span className="cert-id">ID: {certification.credential}</span>
           </div>
+          {certification.url && (
+            <a
+              href={certification.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="clay-chip cert-link"
+            >
+              Lihat Sertifikat <ExternalLink size={13} />
+            </a>
+          )}
         </motion.div>
       </div>
 
@@ -109,6 +119,13 @@ export default function Education() {
           font-size: 12px;
           color: var(--text-faint);
           font-weight: 600;
+        }
+        .cert-link {
+          margin-top: 18px;
+          font-size: 12.5px;
+          padding: 9px 18px;
+          color: var(--accent-dark);
+          width: fit-content;
         }
         @media (max-width: 820px) {
           .edu-grid { grid-template-columns: 1fr; }

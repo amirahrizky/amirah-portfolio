@@ -12,7 +12,7 @@ const bars = [
 
 const chips = [
   { label: "Python", top: "6%", left: "4%", duration: 5.5 },
-  { label: "SQL", top: "18%", left: "78%", duration: 6.2 },
+  { label: "SQL", top: "46%", left: "80%", duration: 6.2 },
   { label: "Power BI", top: "78%", left: "8%", duration: 5 },
   { label: "R", top: "84%", left: "72%", duration: 6.8 },
 ];

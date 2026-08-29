@@ -21,7 +21,17 @@ export default function About() {
           viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
-          <div className="avatar-circle">{profile.initials}</div>
+          <div className="avatar-circle">
+            {profile.photo ? (
+              <img
+                src={profile.photo}
+                alt={profile.name}
+                className="avatar-photo"
+              />
+            ) : (
+              profile.initials
+            )}
+          </div>
           <div className="avatar-ring" aria-hidden="true" />
         </motion.div>
 
@@ -81,6 +91,15 @@ export default function About() {
           color: var(--primary-dark);
           background: linear-gradient(150deg, var(--primary-soft), var(--surface));
           box-shadow: inset 8px 8px 18px var(--shadow-dark), inset -8px -8px 18px var(--shadow-light);
+          padding: 7px;
+          overflow: hidden;
+        }
+        .avatar-photo {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          object-fit: cover;
+          object-position: 50% 15%;
         }
         .avatar-ring {
           position: absolute;

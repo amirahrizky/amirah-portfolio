@@ -30,6 +30,11 @@ export default function Organizations() {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.55, delay: (i % 3) * 0.08, ease: "easeOut" }}
             >
+              {o.photo && (
+                <div className="org-photo-wrap">
+                  <img src={o.photo} alt={`Dokumentasi ${o.role} — ${o.org}`} className="org-photo" />
+                </div>
+              )}
               <div className="clay-icon-circle org-icon">
                 <Users size={18} />
               </div>
@@ -53,6 +58,21 @@ export default function Organizations() {
           display: flex;
           flex-direction: column;
           gap: 4px;
+          overflow: hidden;
+        }
+        .org-photo-wrap {
+          margin: -28px -26px 18px;
+          height: 168px;
+          overflow: hidden;
+        }
+        .org-photo {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.5s ease;
+        }
+        .org-card:hover .org-photo {
+          transform: scale(1.05);
         }
         .org-icon {
           width: 44px;

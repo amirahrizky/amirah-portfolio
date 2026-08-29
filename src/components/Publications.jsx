@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { BookOpen } from "lucide-react";
+import { BookOpen, ExternalLink } from "lucide-react";
 import { publications } from "../data/portfolioData.js";
 
 export default function Publications() {
@@ -16,7 +16,7 @@ export default function Publications() {
           <div className="eyebrow">Publikasi Ilmiah</div>
           <h2 className="section-title">Riset yang telah saya tulis dan terbitkan.</h2>
           <p className="section-sub">
-            Tiga publikasi seputar pemodelan stokastik, deep learning, dan ekonometrika terapan.
+            Empat publikasi seputar pemodelan stokastik, deep learning, dan ekonometrika terapan.
           </p>
         </motion.div>
 
@@ -40,6 +40,16 @@ export default function Publications() {
                 </div>
                 <p className="pub-journal">{p.journal}</p>
                 <p className="pub-desc">{p.desc}</p>
+                {p.url && (
+                  <a
+                    href={p.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="clay-chip pub-link"
+                  >
+                    Lihat Publikasi <ExternalLink size={13} />
+                  </a>
+                )}
               </div>
             </motion.article>
           ))}
@@ -84,6 +94,13 @@ export default function Publications() {
         .pub-desc {
           margin-top: 10px;
           font-size: 14px;
+        }
+        .pub-link {
+          margin-top: 16px;
+          font-size: 12.5px;
+          padding: 9px 18px;
+          color: var(--primary-dark);
+          width: fit-content;
         }
         @media (max-width: 600px) {
           .pub-card { flex-direction: column; }
