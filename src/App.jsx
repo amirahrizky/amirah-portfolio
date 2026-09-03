@@ -5,6 +5,7 @@ import Experience from "./components/Experience.jsx";
 import Organizations from "./components/Organizations.jsx";
 import Publications from "./components/Publications.jsx";
 import Skills from "./components/Skills.jsx";
+import Dashboards from "./components/Dashboards.jsx";
 import Education from "./components/Education.jsx";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
@@ -20,6 +21,7 @@ export default function App() {
         <Organizations />
         <Publications />
         <Skills />
+        <Dashboards />
         <Education />
         <Contact />
       </main>

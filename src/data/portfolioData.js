@@ -11,8 +11,8 @@ export const profile = {
   linkedinHref: "https://linkedin.com/in/amirahrramadhanti",
   github: "github.com/amirahrizky",
   githubHref: "https://github.com/amirahrizky",
-  site: "amiralyze.my.canva.site",
-  siteHref: "https://amiralyze.my.canva.site",
+  site: "amiralyze.vercel.app",
+  siteHref: "https://amiralyze.vercel.app/",
   summary:
     "Fresh graduate S1 Sains Data dengan ketertarikan pada Data Analytics dan Data Science. Memiliki dasar kuat dalam pengolahan, analisis, dan visualisasi data menggunakan Python, SQL, serta metode statistik lewat berbagai proyek akademik. Terbiasa berpikir analitis, teliti dalam mengolah data, dan punya semangat belajar tinggi — siap berkontribusi menghasilkan solusi berbasis data di lingkungan kerja yang dinamis dan kolaboratif.",
 };
@@ -155,6 +155,58 @@ export const publications = [
   },
 ];
 
+export const dashboards = [
+  {
+    title: "Superstore Performance Dashboard",
+    thumbnail: "/projects/superstore-dashboard-thumb.jpg",
+    image: "/projects/superstore-dashboard.jpg",
+    description:
+      "Power BI dashboard analyzing sales, profit, orders, and performance across categories, regions, and customer segments.",
+    insights: [
+      "$2.30M Total Sales generated across 5,009 unique orders, dengan $286.40K total profit.",
+      "12.47% Profit Margin, artinya sekitar $12.47 dari setiap $100 penjualan berhasil ditahan sebagai profit.",
+      "Technology menjadi kategori dengan performa terbaik, menghasilkan Sales dan Profit tertinggi di antara semua kategori.",
+      "West adalah region dengan performa terbaik, memimpin baik dari sisi Sales maupun Profit.",
+      "Consumer menyumbang porsi penjualan terbesar sebesar 50.56%, diikuti Corporate (30.74%) dan Home Office (18.70%).",
+      "Monthly Sales menunjukkan tren kenaikan secara keseluruhan meskipun terdapat fluktuasi dan penurunan periodik.",
+    ],
+    tools: ["Power BI", "Power Query", "DAX"],
+    dataset: {
+      label: "Superstore Sales Dataset",
+      url: "https://www.kaggle.com/datasets/vivek468/superstore-dataset-final",
+    },
+    analysis:
+      "Sales Performance, Profitability, Time Trend, Regional Analysis, Category Analysis, Segment Analysis & Product Ranking",
+    pdfUrl: "https://drive.google.com/file/d/1oUELwEolUMjIpnMUqRwMabUA28iCTrAR/view?usp=drive_link",
+    pbixUrl: "https://drive.google.com/file/d/1SDNDtMpm7B5wIf45Ykg_Sy13iM02Oks3/view?usp=drive_link",
+  },
+  {
+    title: "Olist E-Commerce Dashboard",
+    thumbnail: "/projects/olist-dashboard-thumb.jpg",
+    image: "/projects/olist-dashboard.jpg",
+    description:
+      "Interactive Power BI dashboard analyzing revenue, customer behavior, payment methods, and delivery performance across the Brazilian e-commerce marketplace.",
+    insights: [
+      "São Paulo menjadi kontributor revenue terbesar dengan R$8,75 juta.",
+      "Revenue secara umum menunjukkan tren peningkatan sepanjang periode analisis, meskipun terdapat penurunan tajam pada periode terakhir yang kemungkinan dipengaruhi oleh data bulanan yang belum lengkap.",
+      "Health & Beauty menjadi kategori dengan revenue tertinggi sebesar R$1,26 juta.",
+      "Repeat customer hanya 3,12%, menunjukkan adanya peluang untuk meningkatkan customer retention.",
+      "Credit card mendominasi 73,92% transaksi.",
+      "Pengiriman yang lebih cepat berkaitan dengan rating pelanggan yang lebih tinggi, dengan rata-rata waktu pengiriman menurun dari 21,25 hari pada rating 1 menjadi 10,62 hari pada rating 5.",
+      "Volume order memiliki peran besar terhadap revenue, dengan AOV sekitar R$136,68.",
+    ],
+    tools: ["Power BI", "Power Query", "DAX"],
+    dataset: {
+      label: "Brazilian E-Commerce Public Dataset by Olist",
+      url: "https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce",
+    },
+    analysis:
+      "Revenue Analysis, Customer Analysis, Product Category Analysis, Payment Analysis, Delivery Performance & Review Analysis",
+    pdfUrl: "https://drive.google.com/file/d/1BtdmDy3_diWCBs5mxWTH4jecyCe3gqKv/view?usp=drive_link",
+    pbixUrl: "https://drive.google.com/file/d/1w4qA63du0AZLBl3FkCAAqkv2rUUPtyeJ/view?usp=drive_link",
+  },
+];
+
 export const skills = [
   {
     group: "Data Analytics",
@@ -192,5 +244,6 @@ export const navLinks = [
   { label: "Pengalaman", href: "#experience" },
   { label: "Publikasi", href: "#publications" },
   { label: "Skill", href: "#skills" },
+  { label: "Dashboard", href: "#dashboards" },
   { label: "Kontak", href: "#contact" },
 ];
