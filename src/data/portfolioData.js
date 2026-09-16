@@ -132,7 +132,8 @@ export const publications = [
   {
     title:
       "Implementasi Model Geometric Brownian Motion dalam Prediksi Harga Saham PT Antam Tbk",
-    journal: "BIAStatistics — Journal of Statistics Theory and Application, Special Issue",
+    journal:
+      "BIAStatistics — Journal of Statistics Theory and Application, Special Issue",
     period: "Feb 2026",
     desc: "Menerapkan model stokastik GBM untuk memprediksi harga saham PT Aneka Tambang Tbk.",
     url: "https://biastatistics.statistics.unpad.ac.id/?journal=biastatistics-special-issue&page=article&op=view&path%5B%5D=352",
@@ -177,8 +178,10 @@ export const dashboards = [
     },
     analysis:
       "Sales Performance, Profitability, Time Trend, Regional Analysis, Category Analysis, Segment Analysis & Product Ranking",
-    pdfUrl: "https://drive.google.com/file/d/1oUELwEolUMjIpnMUqRwMabUA28iCTrAR/view?usp=drive_link",
-    pbixUrl: "https://drive.google.com/file/d/1SDNDtMpm7B5wIf45Ykg_Sy13iM02Oks3/view?usp=drive_link",
+    pdfUrl:
+      "https://drive.google.com/file/d/1oUELwEolUMjIpnMUqRwMabUA28iCTrAR/view?usp=drive_link",
+    pbixUrl:
+      "https://drive.google.com/file/d/1SDNDtMpm7B5wIf45Ykg_Sy13iM02Oks3/view?usp=drive_link",
   },
   {
     title: "Olist E-Commerce Dashboard",
@@ -202,15 +205,48 @@ export const dashboards = [
     },
     analysis:
       "Revenue Analysis, Customer Analysis, Product Category Analysis, Payment Analysis, Delivery Performance & Review Analysis",
-    pdfUrl: "https://drive.google.com/file/d/1BtdmDy3_diWCBs5mxWTH4jecyCe3gqKv/view?usp=drive_link",
-    pbixUrl: "https://drive.google.com/file/d/1w4qA63du0AZLBl3FkCAAqkv2rUUPtyeJ/view?usp=drive_link",
+    pdfUrl:
+      "https://drive.google.com/file/d/1BtdmDy3_diWCBs5mxWTH4jecyCe3gqKv/view?usp=drive_link",
+    pbixUrl:
+      "https://drive.google.com/file/d/1w4qA63du0AZLBl3FkCAAqkv2rUUPtyeJ/view?usp=drive_link",
+  },
+  {
+    title: "Showroom Car Sales Performance Dashboard",
+    thumbnail: "/projects/showroom-dashboard-thumb.jpg",
+    image: "/projects/showroom-dashboard.jpg",
+    description:
+      "Sales, transaction & product performance analysis for a multi-branch car showroom using Power BI.",
+    insights: [
+      "SUV menjadi kategori dengan sales tertinggi, dengan total sales sebesar Rp1,68 triliun.",
+      "Malang menjadi branch dengan sales tertinggi, dengan total sales sekitar Rp324,6 miliar.",
+      "Kredit menjadi payment type yang paling banyak digunakan, dengan proporsi sekitar 42,5% dari total transaksi.",
+      "Mayoritas transaksi berstatus completed, yaitu 89,66%, sedangkan cancelled sebesar 5,42% dan refund sebesar 4,92%.",
+      "Sales menunjukkan fluktuasi sepanjang tahun, dengan Agustus menjadi bulan dengan sales tertinggi sebesar Rp275,5 miliar.",
+    ],
+    tools: ["Power BI", "Power Query", "DAX"],
+    dataset: {
+      label: "Showroom Car Sales Dataset",
+      url: "",
+    },
+    analysis:
+      "Sales Performance, Transaction Analysis, Product Analysis, Branch Analysis, Sales Trend, Payment Analysis & Transaction Status Analysis",
+    pdfUrl:
+      "https://drive.google.com/file/d/1nK3tGrJyfpBvLt7PF_w6f3iqmkJnzJLz/view?usp=drive_link",
+    pbixUrl:
+      "https://drive.google.com/file/d/11i3E1ZXhO7AJaCbGAKrQGAeMzp4S_VlC/view?usp=drive_link",
   },
 ];
 
 export const skills = [
   {
     group: "Data Analytics",
-    items: ["Data Analysis", "Data Mining", "Data Visualization", "Data Wrangling", "Machine Learning"],
+    items: [
+      "Data Analysis",
+      "Data Mining",
+      "Data Visualization",
+      "Data Wrangling",
+      "Machine Learning",
+    ],
   },
   {
     group: "Tech Stack",
@@ -218,13 +254,18 @@ export const skills = [
   },
   {
     group: "Soft Skills",
-    items: ["Analytical Thinking", "Proactive Problem-Solving", "Effective Communication", "Collaborative Teamwork"],
+    items: [
+      "Analytical Thinking",
+      "Proactive Problem-Solving",
+      "Effective Communication",
+      "Collaborative Teamwork",
+    ],
   },
 ];
 
 export const education = {
   degree: "Bachelor of Data Science (S1 Sains Data)",
-  school: "Universitas Pembangunan Nasional \"Veteran\" Jawa Timur",
+  school: 'Universitas Pembangunan Nasional "Veteran" Jawa Timur',
   period: "Jul 2022 — Jun 2026",
   gpa: "3.84",
   gpaMax: "4.0",
@@ -232,7 +273,8 @@ export const education = {
 
 export const certification = {
   title: "Junior Web Programmer",
-  issuer: "Badan Nasional Sertifikasi Profesi (BNSP) — LSP UPN \"Veteran\" Jawa Timur",
+  issuer:
+    'Badan Nasional Sertifikasi Profesi (BNSP) — LSP UPN "Veteran" Jawa Timur',
   credential: "62010.2513.3.0007905.2025",
   period: "Des 2025",
   url: "https://drive.google.com/file/d/1QchXtFbNRAlm3aTndyDsQDYDf0ipPWlQ/view",

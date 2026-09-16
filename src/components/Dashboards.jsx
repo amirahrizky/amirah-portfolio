@@ -26,9 +26,12 @@ export default function Dashboards() {
           transition={{ duration: 0.6 }}
         >
           <div className="eyebrow">Dashboards</div>
-          <h2 className="section-title">Dashboard interaktif yang saya bangun dengan Power BI.</h2>
+          <h2 className="section-title">
+            Dashboard interaktif yang saya bangun dengan Power BI.
+          </h2>
           <p className="section-sub">
-            Dua studi kasus analisis data end-to-end, mulai dari data mentah hingga dashboard siap pakai.
+            Tiga studi kasus analisis data end-to-end, mulai dari data mentah
+            hingga dashboard siap pakai.
           </p>
         </motion.div>
 
@@ -69,7 +72,10 @@ export default function Dashboards() {
 
       <AnimatePresence>
         {active && (
-          <DashboardModal project={active} onClose={() => setActiveIndex(null)} />
+          <DashboardModal
+            project={active}
+            onClose={() => setActiveIndex(null)}
+          />
         )}
       </AnimatePresence>
 
@@ -187,7 +193,11 @@ function DashboardModal({ project, onClose }) {
             onClick={() => setZoomed(true)}
             aria-label="Perbesar gambar dashboard"
           >
-            <img src={project.image} alt={`Dashboard ${project.title}`} className="dash-modal-image" />
+            <img
+              src={project.image}
+              alt={`Dashboard ${project.title}`}
+              className="dash-modal-image"
+            />
             <span className="dash-zoom-hint">
               <ZoomIn size={14} /> Perbesar
             </span>
@@ -265,7 +275,10 @@ function DashboardModal({ project, onClose }) {
               setZoomed(false);
             }}
           >
-            <img src={project.image} alt={`Dashboard ${project.title} (perbesar)`} />
+            <img
+              src={project.image}
+              alt={`Dashboard ${project.title} (perbesar)`}
+            />
           </motion.div>
         )}
       </AnimatePresence>
