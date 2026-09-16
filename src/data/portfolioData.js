@@ -212,8 +212,8 @@ export const dashboards = [
   },
   {
     title: "Showroom Car Sales Performance Dashboard",
-    thumbnail: "/projects/showroom-dashboard-thumb.jpg",
-    image: "/projects/showroom-dashboard.jpg",
+    thumbnail: "/projects/showroom-car-dashboard-thumb.jpg",
+    image: "/projects/showroom-car-dashboard.jpg",
     description:
       "Sales, transaction & product performance analysis for a multi-branch car showroom using Power BI.",
     insights: [
